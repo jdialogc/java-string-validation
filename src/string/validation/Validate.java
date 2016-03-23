@@ -14,4 +14,8 @@ public final class Validate{
     public static boolean name(String name){
         return name.matches("^[\\\\p{L} .'-]+$");
     }
+    
+    public static boolean email(String email){
+        return email.matches("^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$");
+    }
 }
