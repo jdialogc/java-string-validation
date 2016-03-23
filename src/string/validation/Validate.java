@@ -12,7 +12,7 @@ package string.validation;
 public final class Validate{
     
     public static boolean name(String name){
-        return name.matches("^[\\\\p{L} .'-]+$");
+        return name.matches("^[\\p{L} .'-]+$");
     }
     
     public static boolean email(String email){
